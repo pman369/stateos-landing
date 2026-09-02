@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StateOS — The Human Operating System. Optimal internal state is an engineering problem, not a character flaw.">
+    <title>StateOS | The Human Operating System</title>
+    <style>
+        :root {
+            --obsidian: #0D0F12;
+            --gold: #F2C94C;
+            --muted: #A0A0A0;
+            --white: #FFFFFF;
+        }
+
+        * { box-sizing: border-box; }
+        html, body { min-height: 100%; }
+
+        body {
+            background-color: var(--obsidian);
+            color: var(--white);
+            font-family: Satoshi, Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 32px 24px;
+            text-align: center;
+        }
+
+        main { width: min(100%, 760px); }
+
+        h1 {
+            color: var(--gold);
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            line-height: 1;
+            letter-spacing: -0.04em;
+            margin: 18px 0 22px;
+        }
+
+        p {
+            color: var(--muted);
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: clamp(1rem, 2.5vw, 1.1rem);
+            line-height: 1.7;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--gold);
+            color: var(--obsidian);
+            padding: 13px 26px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 4px;
+            margin-top: 32px;
+            transition: transform 160ms ease, box-shadow 160ms ease;
+        }
+
+        .cta-button:hover,
+        .cta-button:focus-visible {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(242, 201, 76, 0.18);
+        }
+
+        .cta-button:focus-visible {
+            outline: 2px solid var(--white);
+            outline-offset: 4px;
+        }
+
+        .mono {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.04em;
+            opacity: 0.5;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .cta-button { transition: none; }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="mono">STATUS: ARCHITECTURE_LOCKED // PENDING_LAUNCH</div>
+        <h1>StateOS</h1>
+        <p>Optimal internal state is an engineering problem, not a character flaw. Reclaim sovereignty over your focus with the world's first Human Operating System.</p>
+        <a href="#" class="cta-button" aria-label="Join the StateOS beta">JOIN THE BETA</a>
+    </main>
+</body>
+</html>
